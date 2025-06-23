@@ -40,7 +40,7 @@ This is a simple web-based tool that analyzes accident descriptions to detect po
 
 **Example Input:**
 ```
-A 20 month old child was struck by a vehicle and killed. The renter, Patrick Barona, was charged with serious injury by vehicle, hit and run/leaving the scene of an accident, and homicide by vehicle.
+A 5-year-old child was hit by a car while crossing the street and sadly passed away at the scene. The driver, John Doe, was arrested for leaving the accident site and causing a fatal injury.
 ```
 
 ## Project Structure
