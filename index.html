@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injury & Body Part Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">🩺 Injury Rule Engine with Body Part Extraction</h2>
+        <p class="subtitle">Enter an accident description (single or list of sentences) to analyze for human injuries and severity.</p>
+        <hr>
+        <textarea id="accident-input" rows="6" placeholder="Example: ['insured vehicle rear ended claimant vehicle', 'airbags did not deploy', 'claimant felt pain in her back'] or The driver suffered a broken leg and minor cuts."></textarea>
+        <button id="analyze-btn">Analyze</button>
+        <div id="message"></div>
+        <div id="results" class="hidden">
+            <h3>🧾 Results</h3>
+            <div class="metrics">
+                <div class="metric">
+                    <span class="metric-label">Injury Found</span>
+                    <span id="injury-found" class="metric-value"></span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Severity</span>
+                    <span id="severity" class="metric-value"></span>
+                </div>
+            </div>
+            <div class="score">
+                <strong>🧮 Severity Score:</strong> <span id="severity-score"></span>
+            </div>
+            <div id="body-parts-section" class="hidden">
+                <strong>🦴 Body Parts Mentioned:</strong>
+                <span id="body-parts"></span>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <script src="accident_rule_engine.js"></script>
+</body>
+</html> 
